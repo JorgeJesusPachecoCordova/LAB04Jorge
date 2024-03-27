@@ -1,0 +1,24 @@
+¿Cómo es que se instalan paquetes con yarn?
+Para instalar paquetes utilizando Yarn, sigue estos pasos:
+Una vez que tienes un proyecto configurado, puedes instalar paquetes usando el comando yarn add seguido 
+del nombre del paquete que deseas instalar. Por ejemplo, para instalar el paquete express, ejecuta:
+yarn add express
+yarn add --dev eslint
+yarn add package1 package2
+Guardar dependencias: Por defecto, Yarn agrega las dependencias al archivo package.json y las instala en la carpeta 
+node_modules. Si quieres que una dependencia se guarde como una dependencia de desarrollo, puedes usar la opción --dev o 
+-D al instalar el paquete
+Instalar dependencias desde el archivo package.json: Si tienes un archivo package.json con todas las dependencias listadas, 
+puedes instalarlas todas ejecutando simplemente yarn en el directorio de tu proyecto. Esto instalará todas las dependencias 
+definidas en package.json.
+
+¿Cómo es que se borran paquetes con yarn?
+Para eliminar paquetes con Yarn, puedes utilizar el comando yarn remove seguido del nombre del paquete que deseas eliminar.
+Eliminar un paquete específico: yarn remove nombre_del_paquete
+Eliminar múltiples paquetes: yarn remove paquete1 paquete2 paquete3
+
+¿Hay algún equivalente en yarn que haga lo mismo que npm init?
+Sí, Yarn tiene un comando equivalente a npm init que se llama yarn init. Al igual que npm init, yarn init se utiliza para 
+inicializar un nuevo proyecto, creando un archivo package.json en el directorio actual y guiándote a través de un proceso 
+interactivo para configurar los detalles del proyecto.
+Para usar yarn init, simplemente ejecuta el comando en tu terminal: yarn init
